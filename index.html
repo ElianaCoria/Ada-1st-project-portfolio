@@ -8,6 +8,8 @@
     <!--styles-->
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header-style.css">
+    <link rel="stylesheet" href="./styles/main-style.css">
+    <link rel="stylesheet" href="./styles/footer-style.css">
     <script src="https://kit.fontawesome.com/274998b53a.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');   
@@ -29,14 +31,9 @@
                         <a href="#contact" class="nav-link-contact">CONTACTAME</a></li>
                 </ul>
             </nav>
-            <div id="eli">Eliana Coria</div>
-            <div id="menu-button">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
-        
     </header>
-     <!--menu mobile-->
+     <!--menu mobile header-->
     <div id="container-menu-mobile">
         <nav class="nav-header-mobile">
        |    <ul class="nav-menu">
@@ -51,6 +48,140 @@
             </ul>
         </nav>
     </div>
-    
+    <!-- here start main and sections -->
+    <main>
+        <!-- 1st section - Intro about me -->
+        <span><a name="hello"></a></span>
+        <section class="first-section">
+            <div class="about-me">
+            <p class="presentation">¡Hola! soy</p>
+            <h1>Eliana Coria</h1>
+            <p class="my-description"> Desarrolladora, amante de las acrobacias aéreas, la danza y la música.</p>
+            <a href="#" class="what-i-do">LO QUE HAGO</a>
+            </div>
+            <img src="assets\images\my-universe.png" class="about-me-img"
+                 alt="Imagen my universe">
+        </section>
+        <!-- 2nd section - Skills -->
+        <span><a name="skills"></a></span>
+        <section class="second-section">
+            <div class="skills container">
+                <h2>Mis conocimientos</h2>
+                <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, beatae? Minus tempora aliquid error blanditiis similique? Voluptatibus incidunt accusantium fugit?</p>
+                <div class="icons-container">
+                    <img src="assets\icons\html icon.png" class="icon" alt="html-icon">
+                    <img src="assets\icons\css icon.png" class="icon" alt="css-icon">
+                    <img src="assets\icons\sass icon.png" class="icon" alt="sass-icon">
+                    <img src="assets\icons\js icon.png" class="icon" alt="javaS-icon">
+                    <img src="assets\icons\react icon.png" class="icon" alt="react-icon">
+                    <img src="assets\icons\git icon.png" class="icon" alt="git-icon">
+                </div>
+            </div>
+        </section>
+        <!-- 3th section - Middle page -->
+        <section class="third-section"> 
+            <img src="assets\images\Comillas-blancas-ok-150x150.png" class="comillas" alt="Comillas">
+            <p class="fhrase">I can throw rays from every quarter of the universe into one vast focus… My course is so clear and obvious that it is delightful to think how straight it is.</p>
+            <h3 class="ada">Ada Lovelace.</h3>
+        </section>
+        <!-- 4th section - Proyects -->
+        <span><a name="proyects"></a></span>
+        <section class="fourth-section">
+            <div class="proyects container">
+                <h2>Mis Proyectos</h2>
+                <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam maiores atque qui? Eos, quas?</p>
+                <div class="my-proyects">
+                    <div class="plan"><img class="front" src="assets\images\mi-pagina.PNG" alt="Portada Portafolio">
+                    <a class="title-page" href="#">Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 5th section - Contact me -->
+        <span><a name="contact"></a></span>
+        <section class="fifth-section">
+            <div class="contact-container">
+                <div class="contact-subcontainer">
+                    <h2 class="contact-title">Contactame</h2>
+                    <p class="intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit aspernatur fugit quidem voluptatibus quia sed consequuntur! Praesentium tempora ut voluptatem autem, sed excepturi repellat enim, eaque!</p>
+                    <div class="list-container">
+                        <ul>
+                            <li class="contact-item"><a href="#" class="contact-link"><i class="social-icon fab fa-twitter-square"></i>@elico</a>
+                            </li>
+                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fab fa-github-alt"></i>ElianaCoria</a>
+                            </li>
+                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fab fa-linkedin-in"></i>Linkedin.ElianaCoria</a>
+                            </li>
+                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fas fa-envelope"></i>e-mail</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-subcontainer">
+                    <h2 class="contact-title">Escribime</h2>
+                    <form action="" method="POST" class="contact-form">
+                        <div class="name-lastname">
+                        <div class="form-style">
+                            <div class="label">
+                                <label for="idName">Nombre*</label>
+                            </div>
+                            <div class="cell">
+                                <input type="text" id="idName" placeholder="por ej.: Eliana" aria-label="Name" required>
+                            </div>
+                        </div>
+                        <div class="form-style">
+                            <div class="label">
+                                <label for="idLastname">Apellido*</label>
+                            </div>
+                            <div class="cell">
+                                <input type="text" id="idLastname" placeholder="por ej.: Coria" aria-label="Lastname" required>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-style">
+                            <div class="label">
+                                <label for="idEmail">Email*</label>
+                            </div>
+                            <div class="your-mail">
+                                <input type="email" id="idEmail" placeholder="por ej.: elicoria@gmail.com" aria-label="email" required>
+                            </div>
+                        </div>
+                        <div class="form-style">
+                            <div class="label">
+                                <label for="message">Mensaje*</label>
+                            </div>
+                            <div>
+                                <textarea name="Mensaje" id="idMessage" cols="30" rows="10" placeholder="Escriba un mensaje..." aria-label="message" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="send">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <nav class="nav-footer">
+            <ul class="nav-menu">
+                <li class="nav-item-footer">
+                    <a href="#hello" class="nav-link-footer">HOLA</a></li>
+                <li class="nav-item-footer">
+                    <a href="#skills" class="nav-link-footer">CONOCIMIENTOS</a></li>
+                <li class="nav-item-footer">
+                    <a href="#proyects" class="nav-link-footer">PROYECTOS</a></li>
+                <li class="nav-item-footer">
+                    <a href="#contact" class="nav-link-footer">CONTACTAME</a></li>
+            </ul>
+            </nav>
+            <div class="icons-footer">
+                <span><a href="#" class="contact-link"><i class="social-icon fab fa-twitter-square"></i></a></span>
+                <span><a href="#"class="contact-link"><i class="social-icon fab fa-github-alt"></i></a></span>
+                <span><a href="#"class="contact-link"><i class="social-icon fab fa-linkedin-in"></i></a></span>
+                <span><a href="#"class="contact-link"><i class="social-icon fas fa-envelope"></i></a></span>
+            </div>
+            <p class="sing">Hecho con 💖 por Eli.</p>
+        </div>
+    </footer>
 </body>
 </html>

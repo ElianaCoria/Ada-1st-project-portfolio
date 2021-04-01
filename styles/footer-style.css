@@ -1,0 +1,37 @@
+footer{
+    width: 100vw;
+    height: 400px;
+    background-color: #DB5375;
+    display: flex;
+    flex-direction: column;
+}
+.container-footer{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-footer{
+    display: flex;
+    justify-content: center;
+}
+.nav-item-footer{
+    margin: 10px;
+}
+.nav-link-footer{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.icons-footer{
+    margin-top: 20px;
+    display: flex;
+}
+.sing{
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
