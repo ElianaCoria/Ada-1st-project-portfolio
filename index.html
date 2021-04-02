@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliana Coria</title>
     <!--styles-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" preload="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" preload="">
+    <script src="https://kit.fontawesome.com/274998b53a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header-style.css">
     <link rel="stylesheet" href="./styles/main-style.css">
     <link rel="stylesheet" href="./styles/footer-style.css">
-    <script src="https://kit.fontawesome.com/274998b53a.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');   
     </style>
@@ -28,7 +30,7 @@
                     <li class="nav-item">
                         <a href="#proyects" class="nav-link">PROYECTOS</a></li>
                     <li class="nav-item item-contact">
-                        <a href="#contact" class="nav-link-contact">CONTACTAME</a></li>
+                        <a href="#contact" class="nav-link nav-link-contact">CONTACTAME</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,7 +59,7 @@
             <p class="presentation">¡Hola! soy</p>
             <h1>Eliana Coria</h1>
             <p class="my-description"> Desarrolladora, amante de las acrobacias aéreas, la danza y la música.</p>
-            <a href="#" class="what-i-do">LO QUE HAGO</a>
+            <a href="#proyects" class="what-i-do">LO QUE HAGO</a>
             </div>
             <img src="assets\images\my-universe.png" class="about-me-img"
                  alt="Imagen my universe">
@@ -69,12 +71,18 @@
                 <h2>Mis conocimientos</h2>
                 <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, beatae? Minus tempora aliquid error blanditiis similique? Voluptatibus incidunt accusantium fugit?</p>
                 <div class="icons-container">
-                    <img src="assets\icons\html icon.png" class="icon" alt="html-icon">
-                    <img src="assets\icons\css icon.png" class="icon" alt="css-icon">
-                    <img src="assets\icons\sass icon.png" class="icon" alt="sass-icon">
-                    <img src="assets\icons\js icon.png" class="icon" alt="javaS-icon">
-                    <img src="assets\icons\react icon.png" class="icon" alt="react-icon">
-                    <img src="assets\icons\git icon.png" class="icon" alt="git-icon">
+                    <div class="icon-subcontainer"><i class="devicon-html5-plain colored icon"></i>
+                    <p class="icon-name">HTML 5</p></div>
+                    <div class="icon-subcontainer"><i class="devicon-css3-plain colored icon"></i>
+                        <p class="icon-name"> CSS 3</p></div>
+                    <div class="icon-subcontainer"><i class="devicon-sass-original colored icon"></i>
+                        <p class="icon-name">Sass</p></div>
+                    <div class="icon-subcontainer"><i class="devicon-javascript-plain colored icon"></i>
+                        <p class="icon-name">JavaScript</p></div>
+                    <div class="icon-subcontainer"><i class="devicon-react-original colored icon"></i>
+                        <p class="icon-name">React</p></div>
+                    <div class="icon-subcontainer"><i class="devicon-git-plain colored icon"></i>
+                        <p class="icon-name">GIT</p></div>
                 </div>
             </div>
         </section>
@@ -91,9 +99,34 @@
                 <h2>Mis Proyectos</h2>
                 <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam maiores atque qui? Eos, quas?</p>
                 <div class="my-proyects">
-                    <div class="plan"><img class="front" src="assets\images\mi-pagina.PNG" alt="Portada Portafolio">
-                    <a class="title-page" href="#">Portfolio</a>
-                    </div>
+                    <a class="item-proyect" href="#" target="blank">
+                        <img class="front" src="assets\images\mi-pagina.PNG" alt="Portada Portafolio">
+                        <p class="title-page">Portfolio</p>
+                    </a> 
+                    <a class="item-proyect" href="#" target="blank">
+                        <img class="front" src="assets\images\ads.png" alt="Portada Portafolio">
+                        <p class="title-page">Analizador de Ads</p>
+                    </a>                    
+                    <a class="item-proyect" href="#" target="blank">
+                        <img class="front" src="assets\images\chat-bot.png" alt="Portada Portafolio">
+                        <p class="title-page">Chat bot</p>
+                    </a>                    
+                    <a class="item-proyect" href="#" target="blank">
+                        <img class="front" src="assets\images\messenger.png" alt="Portada Portafolio">
+                        <p class="title-page">Mensajero</p>
+                    </a>                    
+                    <a class="item-proyect" href="#" target="blank">
+                        <img class="front" src="assets\images\calendar.png" alt="Portada Portafolio">
+                        <p class="title-page">Mi agenda</p>
+                    </a>                    
+                    <a class="item-proyect" href="#" target="blank">
+                        <img class="front" src="assets\images\adventure.png" alt="Portada Portafolio">
+                        <p class="title-page">Próxima aventura</p>
+                    </a>                    
+                    <a class="item-proyect" href="#" target="blank">
+                        <img class="front" src="assets\images\audio-player.png" alt="Portada Portafolio">
+                        <p class="title-page">Mi música</p>
+                    </a>                                       
                 </div>
             </div>
         </section>
@@ -106,13 +139,17 @@
                     <p class="intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit aspernatur fugit quidem voluptatibus quia sed consequuntur! Praesentium tempora ut voluptatem autem, sed excepturi repellat enim, eaque!</p>
                     <div class="list-container">
                         <ul>
-                            <li class="contact-item"><a href="#" class="contact-link"><i class="social-icon fab fa-twitter-square"></i>@elico</a>
+                            <li class="contact-item">
+                                <a href="#"  class="contact-link">
+                                    <i class="social-icon fab fa-twitter-square"></i>
+                                    <p class="constact-label">@elico</p>
+                                </a>
                             </li>
-                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fab fa-github-alt"></i>ElianaCoria</a>
+                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fab fa-github-alt"></i><p class="constact-label"> ElianaCoria</p></a>
                             </li>
-                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fab fa-linkedin-in"></i>Linkedin.ElianaCoria</a>
+                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fab fa-linkedin-in"></i><p class="constact-label">Linkedin.ElianaCoria</p></a>
                             </li>
-                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fas fa-envelope"></i>e-mail</a>
+                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fas fa-envelope"></i><p class="constact-label">e-mail</p></a>
                             </li>
                         </ul>
                     </div>
@@ -122,37 +159,29 @@
                     <form action="" method="POST" class="contact-form">
                         <div class="name-lastname">
                         <div class="form-style">
-                            <div class="label">
-                                <label for="idName">Nombre*</label>
-                            </div>
-                            <div class="cell">
+                                <label class="title-label" for="idName">Nombre*</label>
                                 <input type="text" id="idName" placeholder="por ej.: Eliana" aria-label="Name" required>
-                            </div>
+                                <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
+                                <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
                         </div>
                         <div class="form-style">
-                            <div class="label">
-                                <label for="idLastname">Apellido*</label>
-                            </div>
-                            <div class="cell">
+                                <label class="title-label" for="idLastname">Apellido*</label>
                                 <input type="text" id="idLastname" placeholder="por ej.: Coria" aria-label="Lastname" required>
-                            </div>
+                                <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
+                                <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
                         </div>
                         </div>
                         <div class="form-style">
-                            <div class="label">
-                                <label for="idEmail">Email*</label>
-                            </div>
-                            <div class="your-mail">
+                                <label class="title-label" for="idEmail">Email*</label>
                                 <input type="email" id="idEmail" placeholder="por ej.: elicoria@gmail.com" aria-label="email" required>
-                            </div>
+                                <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
+                                <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
                         </div>
                         <div class="form-style">
-                            <div class="label">
-                                <label for="message">Mensaje*</label>
-                            </div>
-                            <div>
+                                <label class="title-label" for="message">Mensaje*</label>
                                 <textarea name="Mensaje" id="idMessage" cols="30" rows="10" placeholder="Escriba un mensaje..." aria-label="message" required></textarea>
-                            </div>
+                                <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
+                                <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
                         </div>
                         <button type="submit" class="send">Enviar</button>
                     </form>
@@ -180,7 +209,7 @@
                 <span><a href="#"class="contact-link"><i class="social-icon fab fa-linkedin-in"></i></a></span>
                 <span><a href="#"class="contact-link"><i class="social-icon fas fa-envelope"></i></a></span>
             </div>
-            <p class="sing">Hecho con 💖 por Eli.</p>
+            <p class="sing">Hecho con 🍒 por Eli.</p>
         </div>
     </footer>
 </body>

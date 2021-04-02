@@ -56,6 +56,13 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0,2s;
+}
+.what-i-do:hover{
+    background-color:  #e67b96;
+}
+.what-i-do:active{
+    box-shadow:  0 0 10px 0 #DB5375;
 }
 .about-me-img{
     width: 40%;
@@ -90,25 +97,36 @@ h2{
     max-width: 600px;
 }
 .icons-container{
-    width: 600px;
-    height: 400px;
-    /* height: auto; */
-    /* margin: 0 100px;
-    padding: 10px; */
+    width: 60%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.icon-subcontainer{
+    width: 190px;
+    color: #729ea1;
+    background-color: white;
+    border: 1px solid #93c7ca;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    transition: 0,2s;
+}
+.icon-subcontainer:hover{
+    border: 1px solid #DB5375;
+    color: #DB5375;
 }
 .icon{
-    width: 150px;
-    height: 150px;
-    border:none;
-    border-radius: 10px;
-    margin: 10px;
+    font-size: 80px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-.icon:hover{
-    border: 1px solid #729ea1;
+
+.icon-name{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px;
 }
 /* 3th section - Middle page */
 .third-section{
@@ -140,26 +158,36 @@ h2{
 .my-proyects{
     width: 100%;
     display: flex;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    padding: 0 120px;
 }
-.plan{
-    width: 35%;
+.item-proyect{
+    width: calc(100% / 3 - (10px * 2));
     margin: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     border: 1px solid #f5ece0;
     border-radius: 10px;
     padding: 20px;
+    color: #ec9192;
+    transition: 0,2s;
+}
+.item-proyect:hover{
+    border-color: #DB5375;
+    color: #DB5375;
+}
+.item-proyect:active{
+    box-shadow:  0 0 10px 0 #DB5375;
 }
 .front{
-    width: 300px;
+    width: 100%;
     margin-bottom: 30px;
 }
 .title-page{
     font-size: 20px;
     font-weight: 600;
-    color: #ec9192;
     margin: 30px 0 20px;
 }
 /* 5th section - Contact me */
@@ -200,61 +228,110 @@ h2{
 }
 .social-icon{
     display: flex;
-    padding: 7px;
+    padding: 8px;
     width: 35px;
     height: 35px;
     color: #DB5375;
     font-size: 20px;
     background-color: white;
-    margin-right: 10px;
-    border: 1px solid #DB5375;
+    /* border: 1px solid #DB5375; */
     border-radius: 50px;
     text-align: center;
 }
-.social-icon:hover{
+.contact-link:hover > .social-icon{
     color: white;
     background-color: #DB5375;
 }
+
 .contact-link{
     display: flex;
     align-items: center;
-    padding: 5px 10px;
-    border-radius: 100px;
+    /* padding: 5px 10px; */
+    border-radius: 50%;
     color: #ec9192;
+    margin-right: 20px;
+    border: 1px solid white;
+}
+.contact-link:hover{
+    color: #DB5375;
+}
+.constact-label{
+    margin-left: 15px;
 }
 form{
     width: 100%;
     display: block;
 }
-input, textarea{
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    background-color: whitesmoke;
-    padding: 10px;
+.name-lastname{
+    display: flex;
 }
 .form-style{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    position: relative;
+    flex-grow: 1;
 }
-.label{
+.title-label{
     color: #729ea1;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-.name-lastname{
-    display: flex;
+input, textarea{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding: 10px;
+    outline: none;
 }
-.cell{
-    flex-grow: 1;
-    position: relative;
+input:focus, textarea:focus{
+    box-shadow:  0 0 10px 0 #DB5375;
+}
+input:invalid:not(:placeholder-shown), textarea:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+}
+input:invalid:focus, textarea:invalid:focus {
+    box-shadow: 0px 0px 5px red;
+}
+input:valid ~ .icon-ok, textarea:valid ~ .icon-ok, input:not(:placeholder-shown):invalid ~ .icon-fail, textarea:not(:placeholder-shown):invalid ~ .icon-fail {
+    display: block;
+}
+input:valid, textarea:valid {
+    border: 1px solid green;
+}
+input:valid:focus, textarea:valid:focus {
+    box-shadow: 0px 0px 5px green;
+}
+.icon-fail, .icon-ok {
+    display: none;
+    position: absolute;
+    bottom: 28px;
+    right: 19px;
+    transform: translateY(50%);
+}
+.icon-fail {
+    color: red;
+}
+.icon-ok {
+    color: green;
+}
+button{
+    outline: none;
 }
 .send{
-    font-size: 20px;
-    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
     background-color: #DB5375;
     color: white;
+    border: none;
     border-radius: 100px;
     margin: 15px;
+}
+.send:hover{
+    background-color: #ec9192;
+}
+.send:active{
+    box-shadow:  0 0 10px 0 #DB5375;
 }
