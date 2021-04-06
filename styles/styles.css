@@ -4,3 +4,36 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: #DB5375;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 45px;
+    font-weight: 900;
+    color: #729ea1;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 35px;
+    font-weight: 800;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #729ea1;
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+button{
+    outline: none;
+}

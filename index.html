@@ -8,6 +8,7 @@
     <!--styles-->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" preload="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" preload="">
+    <link rel="icon" type="image/png" href="assets\icons\favicon.png" sizes="16x16">
     <script src="https://kit.fontawesome.com/274998b53a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header-style.css">
@@ -20,6 +21,9 @@
 <body>
     <!--Header start-->
     <header>
+        <button class="menu-button" aria-controls="show menu mobile">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
         <div class="container-header">
             <nav class="nav-header">
                 <ul class="nav-menu">
@@ -36,17 +40,24 @@
         </div>
     </header>
      <!--menu mobile header-->
-    <div id="container-menu-mobile">
-        <nav class="nav-header-mobile">
-       |    <ul class="nav-menu">
+    <div id="container-header-mobile">
+        <button class="menu-button" aria-controls="show menu mobile">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <button class="close-menu-mobile" aria-label="close-menu">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <h2>Secciones</h2>
+        <nav>
+           <ul>
                 <li class="nav-item">
                     <a href="#hello" class="nav-link">HOLA</a></li>
                 <li class="nav-item">
                     <a href="#skills" class="nav-link">CONOCIMIENTOS</a></li>
                 <li class="nav-item">
                     <a href="#proyects" class="nav-link">PROYECTOS</a></li>
-                <li class="nav-item item-contact">
-                    <a href="#contact" class="nav-link-contact">CONTACTAME</a></li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACTAME</a></li>
             </ul>
         </nav>
     </div>
@@ -54,15 +65,15 @@
     <main>
         <!-- 1st section - Intro about me -->
         <span><a name="hello"></a></span>
-        <section class="first-section">
+        <section class="first-section responsive">
             <div class="about-me">
-            <p class="presentation">¡Hola! soy</p>
-            <h1>Eliana Coria</h1>
-            <p class="my-description"> Desarrolladora, amante de las acrobacias aéreas, la danza y la música.</p>
-            <a href="#proyects" class="what-i-do">LO QUE HAGO</a>
+                <p class="presentation">¡Hola! soy</p>
+                <h1>Eliana Coria</h1>
+                <p class="my-description"> Desarrolladora, amante de las acrobacias aéreas, la danza y la música.</p>
+                <a href="#proyects" class="what-i-do">LO QUE HAGO</a>
             </div>
-            <img src="assets\images\my-universe.png" class="about-me-img"
-                 alt="Imagen my universe">
+                <img src="assets\images\my-universe.png" class="about-me-img"
+                     alt="Imagen my universe">
         </section>
         <!-- 2nd section - Skills -->
         <span><a name="skills"></a></span>
@@ -72,25 +83,31 @@
                 <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, beatae? Minus tempora aliquid error blanditiis similique? Voluptatibus incidunt accusantium fugit?</p>
                 <div class="icons-container">
                     <div class="icon-subcontainer"><i class="devicon-html5-plain colored icon"></i>
-                    <p class="icon-name">HTML 5</p></div>
+                        <p class="icon-name">HTML 5</p>
+                    </div>
                     <div class="icon-subcontainer"><i class="devicon-css3-plain colored icon"></i>
-                        <p class="icon-name"> CSS 3</p></div>
+                        <p class="icon-name"> CSS 3</p>
+                    </div>
                     <div class="icon-subcontainer"><i class="devicon-sass-original colored icon"></i>
-                        <p class="icon-name">Sass</p></div>
+                        <p class="icon-name">Sass</p>
+                    </div>
                     <div class="icon-subcontainer"><i class="devicon-javascript-plain colored icon"></i>
-                        <p class="icon-name">JavaScript</p></div>
+                        <p class="icon-name">JavaScript</p>
+                    </div>
                     <div class="icon-subcontainer"><i class="devicon-react-original colored icon"></i>
-                        <p class="icon-name">React</p></div>
+                        <p class="icon-name">React</p>
+                    </div>
                     <div class="icon-subcontainer"><i class="devicon-git-plain colored icon"></i>
-                        <p class="icon-name">GIT</p></div>
+                        <p class="icon-name">GIT</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- 3th section - Middle page -->
-        <section class="third-section"> 
-            <img src="assets\images\Comillas-blancas-ok-150x150.png" class="comillas" alt="Comillas">
-            <p class="fhrase">I can throw rays from every quarter of the universe into one vast focus… My course is so clear and obvious that it is delightful to think how straight it is.</p>
-            <h3 class="ada">Ada Lovelace.</h3>
+        <!-- 3th section - Quoted text -->
+        <section class="third-section">
+            <i class="fas fa-quote-right quote-mark"></i>
+            <p class="quote">I can throw rays from every quarter of the universe into one vast focus… My course is so clear and obvious that it is delightful to think how straight it is.</p>
+            <h3>Ada Lovelace.</h3>
         </section>
         <!-- 4th section - Proyects -->
         <span><a name="proyects"></a></span>
@@ -99,32 +116,32 @@
                 <h2>Mis Proyectos</h2>
                 <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam maiores atque qui? Eos, quas?</p>
                 <div class="my-proyects">
-                    <a class="item-proyect" href="#" target="blank">
-                        <img class="front" src="assets\images\mi-pagina.PNG" alt="Portada Portafolio">
+                    <a href="#" target="_blank" data-language="html-css" rel="noopener noreferrer" class="item-proyect">
+                        <img class="front" src="assets\images\mi-pagina.PNG" alt="Portada Proyecto 1 - Portafolio">
                         <p class="title-page">Portfolio</p>
                     </a> 
-                    <a class="item-proyect" href="#" target="blank">
-                        <img class="front" src="assets\images\ads.png" alt="Portada Portafolio">
+                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="item-proyect">
+                        <img class="front" src="assets\images\ads.png" alt="Portada Proyecto 2">
                         <p class="title-page">Analizador de Ads</p>
                     </a>                    
-                    <a class="item-proyect" href="#" target="blank">
-                        <img class="front" src="assets\images\chat-bot.png" alt="Portada Portafolio">
+                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="item-proyect">
+                        <img class="front" src="assets\images\chat-bot.png" alt="Portada Proyecto 3">
                         <p class="title-page">Chat bot</p>
                     </a>                    
-                    <a class="item-proyect" href="#" target="blank">
-                        <img class="front" src="assets\images\messenger.png" alt="Portada Portafolio">
+                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="item-proyect">
+                        <img class="front" src="assets\images\messenger.png" alt="Portada Proyecto 4">
                         <p class="title-page">Mensajero</p>
                     </a>                    
-                    <a class="item-proyect" href="#" target="blank">
-                        <img class="front" src="assets\images\calendar.png" alt="Portada Portafolio">
+                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="item-proyect">
+                        <img class="front" src="assets\images\calendar.png" alt="Portada Proyecto 5">
                         <p class="title-page">Mi agenda</p>
                     </a>                    
-                    <a class="item-proyect" href="#" target="blank">
-                        <img class="front" src="assets\images\adventure.png" alt="Portada Portafolio">
+                    <a href="#" target="_blank" data-language="react" rel="noopener noreferrer" class="item-proyect">
+                        <img class="front" src="assets\images\adventure.png" alt="Portada Proyecto 6">
                         <p class="title-page">Próxima aventura</p>
                     </a>                    
-                    <a class="item-proyect" href="#" target="blank">
-                        <img class="front" src="assets\images\audio-player.png" alt="Portada Portafolio">
+                    <a href="#" target="_blank" data-language="react" rel="noopener noreferrer" class="item-proyect">
+                        <img class="front" src="assets\images\audio-player.png" alt="Portada Proyecto 7">
                         <p class="title-page">Mi música</p>
                     </a>                                       
                 </div>
@@ -133,23 +150,36 @@
         <!-- 5th section - Contact me -->
         <span><a name="contact"></a></span>
         <section class="fifth-section">
-            <div class="contact-container">
+            <div class="contact-container responsive">
                 <div class="contact-subcontainer">
                     <h2 class="contact-title">Contactame</h2>
                     <p class="intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit aspernatur fugit quidem voluptatibus quia sed consequuntur! Praesentium tempora ut voluptatem autem, sed excepturi repellat enim, eaque!</p>
                     <div class="list-container">
                         <ul>
                             <li class="contact-item">
-                                <a href="#"  class="contact-link">
+                                <a href="https://twitter.com" target="_blank" class="contact-link" aria-label="Twitter">
                                     <i class="social-icon fab fa-twitter-square"></i>
-                                    <p class="constact-label">@elico</p>
+                                    <p class="contact-label">@Elianasoyyo</p>
                                 </a>
                             </li>
-                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fab fa-github-alt"></i><p class="constact-label"> ElianaCoria</p></a>
+                            <li class="contact-item">
+                                <a href="https://github.com/" target="_blank" class="contact-link" aria-label="Github">
+                                    <i class="social-icon fab fa-github-alt">
+                                    </i>
+                                    <p class="contact-label">ElianaCoria</p>
+                                </a>
                             </li>
-                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fab fa-linkedin-in"></i><p class="constact-label">Linkedin.ElianaCoria</p></a>
+                            <li class="contact-item">
+                                <a href="https://www.linkedin.com/in/Eliana-Coria" target="_blank" class="contact-link" aria-label="Linkedin">
+                                    <i class="social-icon fab fa-linkedin-in"></i>
+                                    <p class="contact-label">eliana-coria</p>
+                                </a>
                             </li>
-                            <li class="contact-item"><a href="#"class="contact-link"><i class="social-icon fas fa-envelope"></i><p class="constact-label">e-mail</p></a>
+                            <li class="contact-item">
+                                <a href="mailto:elicoria.life@gmail.com" target="_blank" class="contact-link" aria-label="Email">
+                                    <i class="social-icon fas fa-envelope"></i>
+                                    <p class="contact-label">elicoria.life@gmail.com</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -183,14 +213,13 @@
                                 <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
                                 <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
                         </div>
-                        <button type="submit" class="send">Enviar</button>
+                        <button type="submit" value="SEND" class="send-button">Enviar</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="container-footer">
             <nav class="nav-footer">
             <ul class="nav-menu">
                 <li class="nav-item-footer">
@@ -204,13 +233,20 @@
             </ul>
             </nav>
             <div class="icons-footer">
-                <span><a href="#" class="contact-link"><i class="social-icon fab fa-twitter-square"></i></a></span>
-                <span><a href="#"class="contact-link"><i class="social-icon fab fa-github-alt"></i></a></span>
-                <span><a href="#"class="contact-link"><i class="social-icon fab fa-linkedin-in"></i></a></span>
-                <span><a href="#"class="contact-link"><i class="social-icon fas fa-envelope"></i></a></span>
+                <a href="https://twitter.com" target="_blank" class="contact-link contact-link-footer">
+                    <i class="social-icon fab fa-twitter-square"></i>
+                </a>
+                <a href="https://github.com/" target="_blank" class="contact-link contact-link-footer">
+                    <i class="social-icon fab fa-github-alt"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/Eliana-Coria" target="_blank" class="contact-link contact-link-footer">
+                    <i class="social-icon fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:elicoria.life@gmail.com" target="_blank" class="contact-link contact-link-footer">
+                    <i class="social-icon fas fa-envelope"></i>
+                </a>
             </div>
-            <p class="sing">Hecho con 🍒 por Eli.</p>
-        </div>
+            <p class="sing">Hecho por Eli 🍒</p>
     </footer>
 </body>
 </html>
