@@ -33,7 +33,7 @@ footer{
 .contact-link-footer{
     margin-right: 20px;
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 415px){
     footer{
         height: 200px;
     }

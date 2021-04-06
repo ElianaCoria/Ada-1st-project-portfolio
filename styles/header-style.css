@@ -94,7 +94,7 @@ header{
 }
 /* end header mobile */
 /* Responsive */
-@media screen and (max-width: 400px){
+@media screen and (max-width: 415px){
     header{
         height: 50px;
         padding: 0;
