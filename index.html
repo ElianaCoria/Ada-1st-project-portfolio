@@ -21,7 +21,7 @@
 <body>
     <!--Header start-->
     <header>
-        <button class="menu-button" aria-controls="show menu mobile">
+        <button class="menu-button-mobile" aria-controls="show menu mobile">
             <i class="fas fa-bars" aria-hidden="true"></i>
         </button>
         <div class="container-header">
@@ -32,18 +32,15 @@
                     <li class="nav-item">
                         <a href="#skills" class="nav-link">CONOCIMIENTOS</a></li>
                     <li class="nav-item">
-                        <a href="#proyects" class="nav-link">PROYECTOS</a></li>
+                        <a href="#projects" class="nav-link">PROYECTOS</a></li>
                     <li class="nav-item item-contact">
                         <a href="#contact" class="nav-link nav-link-contact">CONTACTAME</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-     <!--menu mobile header-->
+     <!--menu mobile header (this will work with JavaScript programming)-->
     <div id="container-header-mobile">
-        <button class="menu-button" aria-controls="show menu mobile">
-            <i class="fas fa-bars" aria-hidden="true"></i>
-        </button>
         <button class="close-menu-mobile" aria-label="close-menu">
             <i class="fas fa-times" aria-hidden="true"></i>
         </button>
@@ -55,7 +52,7 @@
                 <li class="nav-item">
                     <a href="#skills" class="nav-link">CONOCIMIENTOS</a></li>
                 <li class="nav-item">
-                    <a href="#proyects" class="nav-link">PROYECTOS</a></li>
+                    <a href="#projects" class="nav-link">PROYECTOS</a></li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">CONTACTAME</a></li>
             </ul>
@@ -65,96 +62,102 @@
     <main>
         <!-- 1st section - Intro about me -->
         <span><a name="hello"></a></span>
-        <section class="first-section responsive">
-            <div class="about-me">
+        <section class="about-me-section responsive">
+            <div class="about-me-container">
                 <p class="presentation">¡Hola! soy</p>
                 <h1>Eliana Coria</h1>
                 <p class="my-description"> Desarrolladora, amante de las acrobacias aéreas, la danza y la música.</p>
-                <a href="#proyects" class="what-i-do">LO QUE HAGO</a>
+                <a href="#projects" class="about-me-button">LO QUE HAGO</a>
             </div>
                 <img src="assets\images\my-universe.png" class="about-me-img"
                      alt="Imagen my universe">
         </section>
         <!-- 2nd section - Skills -->
         <span><a name="skills"></a></span>
-        <section class="second-section">
+        <section class="skills-section">
             <div class="skills container">
                 <h2>Mis conocimientos</h2>
                 <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, beatae? Minus tempora aliquid error blanditiis similique? Voluptatibus incidunt accusantium fugit?</p>
-                <div class="icons-container">
-                    <div class="icon-subcontainer"><i class="devicon-html5-plain colored icon"></i>
-                        <p class="icon-name">HTML 5</p>
+                <div class="icons-skills-container">
+                    <div class="skill-item">
+                        <i class="devicon-html5-plain colored skill-icon"></i>
+                        <p class="skill-name">HTML 5</p>
                     </div>
-                    <div class="icon-subcontainer"><i class="devicon-css3-plain colored icon"></i>
-                        <p class="icon-name"> CSS 3</p>
+                    <div class="skill-item">
+                        <i class="devicon-css3-plain colored skill-icon"></i>
+                        <p class="skill-name">CSS 3</p>
                     </div>
-                    <div class="icon-subcontainer"><i class="devicon-sass-original colored icon"></i>
-                        <p class="icon-name">Sass</p>
+                    <div class="skill-item">
+                        <i class="devicon-sass-original colored skill-icon"></i>
+                        <p class="skill-name">Sass</p>
                     </div>
-                    <div class="icon-subcontainer"><i class="devicon-javascript-plain colored icon"></i>
-                        <p class="icon-name">JavaScript</p>
+                    <div class="skill-item">
+                        <i class="devicon-javascript-plain colored skill-icon"></i>
+                        <p class="skill-name">JavaScript</p>
                     </div>
-                    <div class="icon-subcontainer"><i class="devicon-react-original colored icon"></i>
-                        <p class="icon-name">React</p>
+                    <div class="skill-item">
+                        <i class="devicon-react-original colored skill-icon"></i>
+                        <p class="skill-name">React</p>
                     </div>
-                    <div class="icon-subcontainer"><i class="devicon-git-plain colored icon"></i>
-                        <p class="icon-name">GIT</p>
+                    <div class="skill-item">
+                        <i class="devicon-git-plain colored skill-icon"></i>
+                        <p class="skill-name">GIT</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- 3th section - Quoted text -->
-        <section class="third-section">
+        <section class="quote-section">
             <i class="fas fa-quote-right quote-mark"></i>
             <p class="quote">I can throw rays from every quarter of the universe into one vast focus… My course is so clear and obvious that it is delightful to think how straight it is.</p>
             <h3>Ada Lovelace.</h3>
         </section>
-        <!-- 4th section - Proyects -->
-        <span><a name="proyects"></a></span>
-        <section class="fourth-section">
-            <div class="proyects container">
+        <!-- 4th section - projects -->
+        <span><a name="projects"></a></span>
+        <section class="projects-section">
+            <div class="projects container">
                 <h2>Mis Proyectos</h2>
                 <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam maiores atque qui? Eos, quas?</p>
-                <div class="my-proyects">
-                    <a href="#" target="_blank" data-language="html-css" rel="noopener noreferrer" class="item-proyect">
-                        <img class="front" src="assets\images\mi-pagina.PNG" alt="Portada Proyecto 1 - Portafolio">
-                        <p class="title-page">Portfolio</p>
+                <div class="my-projects">
+                    <a href="#" target="_blank" data-language="html-css" rel="noopener noreferrer" class="project-item">
+                        <img class="project-cover" src="assets\images\mi-pagina.PNG" alt="Portada Proyecto 1 - Portafolio">
+                        <p class="project-title">Portfolio</p>
                     </a> 
-                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="item-proyect">
-                        <img class="front" src="assets\images\ads.png" alt="Portada Proyecto 2">
-                        <p class="title-page">Analizador de Ads</p>
+                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="project-item">
+                        <img class="project-cover" src="assets\images\ads.png" alt="Portada Proyecto 2">
+                        <p class="project-title">Analizador de Ads</p>
                     </a>                    
-                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="item-proyect">
-                        <img class="front" src="assets\images\chat-bot.png" alt="Portada Proyecto 3">
-                        <p class="title-page">Chat bot</p>
+                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="project-item">
+                        <img class="project-cover" src="assets\images\chat-bot.png" alt="Portada Proyecto 3">
+                        <p class="project-title">Chat bot</p>
                     </a>                    
-                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="item-proyect">
-                        <img class="front" src="assets\images\messenger.png" alt="Portada Proyecto 4">
-                        <p class="title-page">Mensajero</p>
+                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="project-item">
+                        <img class="project-cover" src="assets\images\messenger.png" alt="Portada Proyecto 4">
+                        <p class="project-title">Mensajero</p>
                     </a>                    
-                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="item-proyect">
-                        <img class="front" src="assets\images\calendar.png" alt="Portada Proyecto 5">
-                        <p class="title-page">Mi agenda</p>
+                    <a href="#" target="_blank" data-language="javascript" rel="noopener noreferrer" class="project-item">
+                        <img class="project-cover" src="assets\images\calendar.png" alt="Portada Proyecto 5">
+                        <p class="project-title">Mi agenda</p>
                     </a>                    
-                    <a href="#" target="_blank" data-language="react" rel="noopener noreferrer" class="item-proyect">
-                        <img class="front" src="assets\images\adventure.png" alt="Portada Proyecto 6">
-                        <p class="title-page">Próxima aventura</p>
+                    <a href="#" target="_blank" data-language="react" rel="noopener noreferrer" class="project-item">
+                        <img class="project-cover" src="assets\images\adventure.png" alt="Portada Proyecto 6">
+                        <p class="project-title">Próxima aventura</p>
                     </a>                    
-                    <a href="#" target="_blank" data-language="react" rel="noopener noreferrer" class="item-proyect">
-                        <img class="front" src="assets\images\audio-player.png" alt="Portada Proyecto 7">
-                        <p class="title-page">Mi música</p>
+                    <a href="#" target="_blank" data-language="react" rel="noopener noreferrer" class="project-item">
+                        <img class="project-cover" src="assets\images\audio-player.png" alt="Portada Proyecto 7">
+                        <p class="project-title">Mi música</p>
                     </a>                                       
                 </div>
             </div>
         </section>
         <!-- 5th section - Contact me -->
         <span><a name="contact"></a></span>
-        <section class="fifth-section">
+        <section class="contact-section">
             <div class="contact-container responsive">
                 <div class="contact-subcontainer">
                     <h2 class="contact-title">Contactame</h2>
                     <p class="intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit aspernatur fugit quidem voluptatibus quia sed consequuntur! Praesentium tempora ut voluptatem autem, sed excepturi repellat enim, eaque!</p>
-                    <div class="list-container">
+                    <div class="list-contact-container">
                         <ul>
                             <li class="contact-item">
                                 <a href="https://twitter.com" target="_blank" class="contact-link" aria-label="Twitter">
@@ -187,33 +190,33 @@
                 <div class="contact-subcontainer">
                     <h2 class="contact-title">Escribime</h2>
                     <form action="" method="POST" class="contact-form">
-                        <div class="name-lastname">
-                        <div class="form-style">
+                        <div class="form-subcontainer">
+                            <div class="form-field">
                                 <label class="title-label" for="idName">Nombre*</label>
-                                <input type="text" id="idName" placeholder="por ej.: Eliana" aria-label="Name" required>
-                                <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
-                                <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
-                        </div>
-                        <div class="form-style">
+                                    <input type="text" id="idName" placeholder="por ej.: Eliana" aria-label="Name" required>
+                                    <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
+                                    <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
+                            </div>
+                            <div class="form-field">
                                 <label class="title-label" for="idLastname">Apellido*</label>
-                                <input type="text" id="idLastname" placeholder="por ej.: Coria" aria-label="Lastname" required>
-                                <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
-                                <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
+                                    <input type="text" id="idLastname" placeholder="por ej.: Coria" aria-label="Lastname" required>
+                                    <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
+                                    <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
+                            </div>
                         </div>
-                        </div>
-                        <div class="form-style">
+                        <div class="form-field">
                                 <label class="title-label" for="idEmail">Email*</label>
                                 <input type="email" id="idEmail" placeholder="por ej.: elicoria@gmail.com" aria-label="email" required>
                                 <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
                                 <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
                         </div>
-                        <div class="form-style">
+                        <div class="form-field">
                                 <label class="title-label" for="message">Mensaje*</label>
                                 <textarea name="Mensaje" id="idMessage" cols="30" rows="10" placeholder="Escriba un mensaje..." aria-label="message" required></textarea>
                                 <i class="far fa-times-circle icon-fail" aria-hidden="true"></i>
                                 <i class="far fa-check-circle icon-ok" aria-hidden="true"></i>
                         </div>
-                        <button type="submit" value="SEND" class="send-button">Enviar</button>
+                        <button type="submit" value="SEND" class="form-button">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -227,7 +230,7 @@
                 <li class="nav-item-footer">
                     <a href="#skills" class="nav-link-footer">CONOCIMIENTOS</a></li>
                 <li class="nav-item-footer">
-                    <a href="#proyects" class="nav-link-footer">PROYECTOS</a></li>
+                    <a href="#projects" class="nav-link-footer">PROYECTOS</a></li>
                 <li class="nav-item-footer">
                     <a href="#contact" class="nav-link-footer">CONTACTAME</a></li>
             </ul>
@@ -246,7 +249,7 @@
                     <i class="social-icon fas fa-envelope"></i>
                 </a>
             </div>
-            <p class="sing">Hecho por Eli 🍒</p>
+            <p class="sing-footer">Hecho por Eli 🍒</p>
     </footer>
 </body>
 </html>

@@ -24,7 +24,6 @@ h3{
 p{
     font-size: 16px;
     font-weight: 400;
-    color: #729ea1;
 }
 ul{
     list-style: none;
@@ -36,4 +35,18 @@ a{
 }
 button{
     outline: none;
+}
+@media screen and (max-width: 415px){
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+    }
 }

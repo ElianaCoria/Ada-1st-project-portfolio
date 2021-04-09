@@ -14,13 +14,13 @@ section{
     display: flex;
 }
 /* 1st section - Intro about me */
-.first-section{
+.about-me-section{
     margin: 50px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.about-me{
+.about-me-container{
     width: 50%;
     margin: 10px;
     display: flex;
@@ -30,14 +30,16 @@ section{
 .presentation{
     font-size: 30px;
     font-weight: 800;
+    color: #729ea1;
     margin-top: 0;
     margin-bottom: 20px;
 }
 .my-description{
     margin-top: 0;
     margin-bottom: 30px;
+    color: #729ea1;
 }
-.what-i-do{
+.about-me-button{
     background-color: #DB5375;
     border-radius: 100px;
     padding: 15px 40px;
@@ -48,10 +50,10 @@ section{
     align-items: center;
     transition: 0.2s;
 }
-.what-i-do:hover{
+.about-me-button:hover{
     background-color:  #e67b96;
 }
-.what-i-do:active{
+.about-me-button:active{
     box-shadow:  0 0 10px 0 #DB5375;
 }
 .about-me-img{
@@ -59,7 +61,7 @@ section{
     margin: 10px;
 }
 /* 2nd section - Skills */
-.second-section{
+.skills-section{
     background: whitesmoke;
 }
 .container{
@@ -74,14 +76,15 @@ section{
 .intro{
     margin-bottom: 10px;
     max-width: 600px;
+    color: #729ea1;
 }
-.icons-container{
+.icons-skills-container{
     max-width: 660px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.icon-subcontainer{
+.skill-item{
     width: 190px;
     color: #729ea1;
     background-color: white;
@@ -91,22 +94,22 @@ section{
     padding: 20px;
     transition: 0,2s;
 }
-.icon-subcontainer:hover{
+.skill-item:hover{
     border: 1px solid #DB5375;
     color: #DB5375;
 }
-.icon{
+.skill-icon{
     font-size: 80px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.icon-name{
+.skill-name{
     font-size: 20px;
     font-weight: 700;
     margin-top: 25px;
 }
 /* 3th section - Quoted text */
-.third-section{
+.quote-section{
     background-color: #DB5375;
     color: white;
     flex-direction: column;
@@ -125,16 +128,16 @@ section{
     font-weight: 400;
     margin-bottom: 60px;
 }
-/* 4th section - Proyects */
-/* .proyects container: use the same style of skills container (2nd section) */
-.my-proyects{
+/* 4th section - projects */
+/* .projects container: use the same style of skills container (2nd section) */
+.my-projects{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 30px 0;
     padding: 10px;
 }
-.item-proyect{
+.project-item{
     width: calc(100% / 3 - (10px * 2));
     margin: 10px;
     display: flex;
@@ -146,24 +149,24 @@ section{
     color: #ec9192;
     transition: 0,2s;
 }
-.item-proyect:hover{
+.project-item:hover{
     border-color: #DB5375;
     color: #DB5375;
 }
-.item-proyect:active{
+.project-item:active{
     box-shadow:  0 0 10px 0 #DB5375;
 }
-.front{
+.project-cover{
     width: 100%;
     margin-bottom: 30px;
 }
-.title-page{
+.project-title{
     font-size: 20px;
     font-weight: 600;
     margin: 30px 0 20px;
 }
 /* 5th section - Contact me */
-.fifth-section{
+.contact-section{
     background-color: whitesmoke;
 }
 .contact-container{
@@ -187,15 +190,20 @@ section{
 .contact-title{
     margin-bottom: 20px;
 }
-.list-container{
+.list-contact-container{
     margin: 10px 0;
 }
 .contact-item{
     display: block;
     margin: 10px 0;
 }
-.link-contact{
+.contact-link{
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    color: #ec9192;
+    border: 1px solid white;
 }
 .social-icon{
     display: flex;
@@ -208,31 +216,24 @@ section{
     border-radius: 50px;
     text-align: center;
 }
+.contact-link:hover{
+    color: #DB5375;
+}
 .contact-link:hover > .social-icon{
     color: white;
     background-color: #DB5375;
 }
-.contact-link{
-    display: flex;
-    align-items: center;
-    border-radius: 50%;
-    color: #ec9192;
-    border: 1px solid white;
-}
-.contact-link:hover{
-    color: #DB5375;
-}
 .contact-label{
     margin-left: 15px;
 }
-form{
+.contact-form{
     width: 100%;
     display: block;
 }
-.name-lastname{
+.form-subcontainer{
     display: flex;
 }
-.form-style{
+.form-field{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -283,7 +284,7 @@ input:valid:focus, textarea:valid:focus {
 .icon-ok {
     color: green;
 }
-.send-button{
+.form-button{
     font-size: 18px;
     font-weight: 500;
     padding: 15px 30px;
@@ -293,10 +294,10 @@ input:valid:focus, textarea:valid:focus {
     border-radius: 100px;
     margin: 15px;
 }
-.send:hover{
+.form-button:hover{
     background-color: #ec9192;
 }
-.send:active{
+.form-button:active{
     box-shadow:  0 0 10px 0 #DB5375;
 }
 
@@ -304,23 +305,11 @@ input:valid:focus, textarea:valid:focus {
     section{
         padding: 15px;
     }
-    h1{
-        font-size: 45px;
-    }
-    h2{
-        font-size: 30px;
-    }
-    h3{
-        font-size: 20px;
-    }
-    p{
-        font-size: 14px;
-    }
     /* 1st section - Intro about me */
     .responsive{
         flex-direction: column;
     }
-    .about-me{
+    .about-me-container{
         align-items: center;
         text-align: center;
         width: 100%;
@@ -331,38 +320,38 @@ input:valid:focus, textarea:valid:focus {
         margin: 0;
     }
     /* 2nd section - Skills */
-    .icons-container{
+    .icons-skills-container{
         margin: 40px 0;
         padding: 30px 20px;
     }
-    .icon-subcontainer{
+    .skill-item{
         margin: 5px;
         width: calc(50% - 10px);
     }  
-    .icon{
+    .skill-icon{
         font-size: 40px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .icon-name{
+    .skill-name{
         font-weight: 600;
     }
-    /* 3th section - Middle page */
-    .third-section{
+    /* 3th section - Quoted text */
+    .quote-section{
         padding: 80px 15px;
     }
-    /* 4th section - Proyects */
-    .my-proyects{
+    /* 4th section - projects */
+    .my-projects{
         flex-direction: column;
         margin: 30px 0;
         padding: 10px;
     }
-    .item-proyect{
+    .project-item{
         width: 100%;
         margin: 0 0 20px 0;
     }
     /* 5th section - Contact me */
-    .fifth-section{
+    .contact-section{
         background-color: white;
     }
     .contact-container{
@@ -371,9 +360,9 @@ input:valid:focus, textarea:valid:focus {
     }
     .contact-subcontainer{
         width: 100%;
-        padding: 0px;
+        padding: 0 15px 0 0;
     }
-    .name-lastname{
+    .form-subcontainer{
         flex-direction: column;
     }
 }
